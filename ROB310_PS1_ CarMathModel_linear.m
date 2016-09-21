@@ -52,7 +52,8 @@ for k = 2:(N-1)
     v(k+1) = A_d*v(k)+B_d;
      %%%NOTE: NEED TO change x axis TO TIME    
 end 
-x = 1:N;
+% length (v)
+x = 0:N-1;
 figure 
 plot (x*h, v);
 title ('Car moving on the road')
@@ -85,7 +86,7 @@ for k = 2:(N-1)
     w(k+1) = A_d*w(k)+B_d;
      %%%NOTE: NEED TO change x axis TO TIME    
 end 
-j = 1:N;
+j = 0:N-1;
 figure 
 plot (j*h, w);
 title ('Car moving on the road with b = 0.4 in reality')
